@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Manjith" content="">
+
+	<title>Manjith Dungdung</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+	 <script src="js/jquery.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script src="js/jquery.drawsvg.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ <!--
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      	<img alt="Manjith" id="nav-logo" src="images/logo.png">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">CONTACT</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+-->
+
+<header>
+	<div id="bg" hidden></div>
+	<div id="for-work" hidden></div>
+	<div id="for-contact" hidden></div>
+	<script>$('header').animate({ opacity: 1 }, { duration: 2500 });</script>
+	<div class="container">
+		<div class="main-title">
+			<img id="my-logo" src="images/logo.png">
+			<h2>MANJITH DUNGDUNG</h2>
+			<p>GRAPHIC / WEB / UI / UX</p>
+			<ul>
+				<a href="work.html" id="work"><li>WORK</li></a>
+				<a href="about.html"id="about"><li>ABOUT ME</li></a>
+				<!-- <a href="contact.html" id="contact"><li>CONTACT</li></a> -->
+			</ul>
+			<script>$('.main-title').delay(2000).animate({ opacity: 1 }, { duration: 2500 });</script>
+		</div>
+	</div>
+</header>
+<!-- <footer>
+	<ul>
+		<li><img src="images/facebook.png"></li>
+		<li><img src="images/linkedin.png"></li>
+		<li><img src="images/g+.png"></li>
+		<li><img src="images/dribbble.png"></li>
+		<li><img src="images/github.png"></li>
+		<script>$('footer').delay(2500).animate({ opacity: 1 }, { duration: 2500 });</script>
+	</ul>
+</footer> -->
+<script> 
+ $('#about').hover(function(){
+			$('#bg').fadeTo(1000,0.5);
+			},
+		 function(){
+        $('#bg').fadeOut();
+    });
+  $('#work').hover(function(){
+			$('#for-work').fadeTo(1000,0.5);
+			},
+		 function(){
+        $('#for-work').fadeOut();
+    });
+  $('#contact').hover(function(){
+			$('#for-contact').fadeTo(1000,0.5);
+			},
+		 function(){
+        $('#for-contact').fadeOut();
+    });  
+</script>
+</body>
+</html>
