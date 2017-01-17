@@ -847,3 +847,7 @@ html { height: 100%;}
 	z-index: -1;	
 }
 
+
+.ux-content p, ul{
+	text-align: left;
+}
