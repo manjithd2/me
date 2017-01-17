@@ -56,7 +56,7 @@
 	<div id="portfolio-bg"></div>
 	<div class="container">
 		<div id="portfolio-image">
-			<div class="col-md-6 col-center">
+			<div class="col-md-6 col-md-offset-3">
 				<h2>STOCKIST</h2>
 				<h4>A wedding card retailer app</h4>
 
@@ -91,12 +91,38 @@
 
           <h3>Solution</h3>
           <p>
-            Looking at the exisiting process, I tried to eliminate the need of the retailer to depend on the inventory manager for checking the availability of the card. Instead of having a fully offline process it was more benefecial if the whole inventory was shifted to the cloud. This would mean that the retailer would be able to check the availabilty of the card and also eliminate the routine calls to the inventory manager.
+            Looking at the exisiting process, I tried to eliminate the need of the retailer to depend on the inventory manager for checking the availability of the card. Instead of having a fully offline process it was more benefecial if the whole inventory was shifted to the cloud. This would mean that the retailer would be able to check the availabilty of the card and also eliminate the routine calls to the inventory manager by just using the app.
           </p>
           <img class="img-responsive" src="images/stockist/new workflow.png">
-        
           
+          <h3>The Solution Scenario</h3>
+          <p>
+            How would the solution prove to be more efficient? A retailer would just have to scan the barcode/ QR code present in the card with the app which would retrieve the information about the card from the cloud. </p>
+            <p>
+            <i>But what happens after that? </i>
+            </p>
+            <p>
+            The customer might confirm the card and the retailer has almost converted the customer, he gets the initial payment for blocking the card for the customer and has to inform the stockist about the same because the stockist would not initiate the delivery until the full amount is paid. 
+            </p>
+            <p>
+            <i>What happens if the customer doesn't pay the full amount or doesn't pay at all? </i>
+            </p>
+            To tackle this, there's a block period imposed for each card and the customer should pay the full amount before it expires. The card will be released after the expiration of the block period.  
+            </p>
+            <p>
+            <i>What if the stockist has only 300 cards but the customer wants 500 cards? </i>
+            </p>
+            <p>
+              In the case of such shortages, the stockist is notified about the request and he mentions the delivery date. There are 3 states in this Accept, Reject and Modified. 
+              <br><b>Accept: </b> The stockist can deliver the card by the date mentioned by the retailer.
+              <br><b>Reject: </b> The stockist cannot deliver the card by the date mentioned by the retailer.
+              <br><b>Modify: </b> The stockist can deliver the card by the date mentioned by the stockist, the retailer can choose to accept or reject.
+            </p>
 
+            <h3>Wireframes</h3>
+            <p>Considering my observations and solution scenarios, I came up with wireframes.</p>
+            <img src="images/stockist/wf-exp.jpg">
+            <img src="images/stockist/showcase.jpg">
         </div>	
 			</div>
 		</div>
