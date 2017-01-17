@@ -842,6 +842,15 @@ html { height: 100%;}
 	line-height: 29px;
 }
 
+#portfolio-image h4{
+	/*font-family: "Oxygen", sans-serif;*/
+	font-family: "Cardo",serif;
+	font-size: 17px;
+	font-style: italic;
+	line-height: 29px;
+}
+
+
 #portfolio-bg {
 	/*background: url("../images/misc-bg.png") no-repeat center; */
 	opacity: 0;
