@@ -347,7 +347,7 @@ header h2{
 
 .caption{
 	position: absolute;
-	top: 35%;
+	top: 20%;
 	width: 100%;
 	text-align: center;
 	transition: opacity 0.5s ease;
