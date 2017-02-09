@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Manjith" content="">
+
+	<title>Manjith Dungdung</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Cardo:700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+	 <script src="js/jquery.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script src="js/jquery.drawsvg.min.js"></script>
+	 <style type="text/css">
+	 		#page-content-wrapper{
+	 			padding-top: 0;
+	 	}
+	 </style>
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+      <div class="overlay"></div>
+ <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="work.html">WORK</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+<div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+			<span class="hamb-bottom"></span>
+      </button>
+	<div id="portfolio-bg"></div>
+	<div class="container">
+		<div id="portfolio-image">
+				<h2>TURB</h2>
+				<h4>Public Transport tracking inside campus</h4>
+
+        <div class="ux-content">
+          <div class="col-md-8 col-md-offset-2">
+            <p>Going to classes from the hostel zone in a humongous campus like mine is a herculean tasks. Recently they had introduced bus and electric car services to solve this problem but they didn't know that they had given rise to another one. </p>
+
+            <h3>THE PROBLEM</h3>
+            <p>
+              Buses were given a schedule to follow, to stop at the main places at the alloted times. But what if you were in the middle of two stops and wanted to catch a bus? What if the bus was late? You would want to know the location of the bus. Electric cars operated the same way, shuttling between stops but they weren't given a schedule to follow, giving them all the more reason to be tracked and be used to their fullest. 
+            </p>
+
+            <h3>SOLUTION</h3>
+            <p>Since I wasn't the only one facing the problem of lack of information, I decided why not make an app to solve it. The user would just have to click the app which would lead to a map like interface with the location of the buses and the electric cars. Since there are many buses following different routes, clicking on one bus would show it's details with it's route and estimated time of arrival so you know how much to wait. </p>
+            <i>But, how will the tracking take place?</i>
+            <p>The tracking would take place when the driver opens the driver app and enters his vehicle details</p>
+          </div>
+          <div class="col-md-12">
+            <img class="img-responsive" src="images/turb/SHOWCASE.jpg">
+          </div>
+          
+          <div class="col-md-8 col-md-offset-2" style="padding-bottom:15%;">
+            <h3>FUTURE PLANS</h3>
+            <ul>
+              <li>This is just a concept, I would really like to make it into an app.</li>
+            </ul>
+          
+          </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
+</body>
+</html>
